@@ -3,6 +3,8 @@ import streamlit as st
 # 페이지 설정
 st.set_page_config(page_title="홍익대학교 프로젝트", layout="wide", initial_sidebar_state="expanded")
 
+
+"""
 # 사이드바 메뉴
 st.sidebar.header('메뉴')
 page = st.sidebar.selectbox("페이지 선택", ["첫페이지", "두번째 페이지", "세번째 페이지", "네번째 페이지", "다섯번째 페이지"])
@@ -65,3 +67,4 @@ elif page == "다섯번째 페이지":
     - lei 디퓨저 - [https://shop.lei-aroma.com/ko-kr](https://shop.lei-aroma.com/ko-kr)  
     - 열전소자 - [https://gamma0burst.tistory.com/594](https://gamma0burst.tistory.com/594)
     """)
+"""
