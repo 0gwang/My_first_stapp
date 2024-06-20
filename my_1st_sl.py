@@ -1,17 +1,15 @@
 import streamlit as st
-#from streamlit_option_menu import option_menu
 
 # 페이지 설정
-st.set_page_config(page_title="홍익대학교 프로젝트", layout="wide")
+st.set_page_config(page_title="홍익대학교 프로젝트", layout="wide", initial_sidebar_state="expanded")
 
 # 사이드바 메뉴
-with st.sidebar:
-    selected = option_menu("Menu", ["첫페이지", "두번째 페이지", "세번째 페이지", "네번째 페이지", "다섯번째 페이지"],
-                           icons=['house', 'camera', 'book', 'pencil', 'link'], menu_icon="cast", default_index=0)
+st.sidebar.header('메뉴')
+page = st.sidebar.selectbox("페이지 선택", ["첫페이지", "두번째 페이지", "세번째 페이지", "네번째 페이지", "다섯번째 페이지"])
 
 # 첫 번째 페이지: 과목명, 소속, 학번, 이름, 프로젝트 명
-if selected == "첫페이지":
-    st.image("image_page1.png")
+if page == "첫페이지":
+    st.image("image/image_page1.png")
     st.title("파이썬 프로그래밍 프로젝트")
     st.subheader("개인 프로젝트")
     st.markdown("""
@@ -21,27 +19,26 @@ if selected == "첫페이지":
     """)
 
 # 두 번째 페이지: 창업하고 싶은 아이템 사진과 제품명
-elif selected == "두번째 페이지":
+elif page == "두번째 페이지":
     st.title("창업하고 싶은 아이템")
     st.subheader("열전 물질을 이용한 무선 디퓨저")
     st.markdown("""
     열을 동력으로 사용하는 반도체를 이용하여 사용자가 원하는 향을 가진 향초를 기기에 넣고 향초를 점화하면 열이 발생한다. 
     해당 열을 통해서 프로펠러가 돌아가서 디퓨저가 있는 공간에 해당 향이 확산되는 인테리어 소품
     """)
-    st.image(["image_page2_1.png", 
-              "image_page2_2.png", 
-              "image_page2_3.png", 
-              "image_page2_4.png", 
-              "https://raw.githubusercontent.com/<username>/<repository>/main/path_to_image6.png", 
-              "image_page2_5.png"])
+    st.image(["image/image_page2_1.png", 
+              "image/image_page2_2.png", 
+              "image/image_page2_3.png", 
+              "image/image_page2_4.png", 
+              "image/image_page2_5.png"])
 
 # 세 번째 페이지: 아이템 사진 두 개, 기존 제품의 방식, 단점
-elif selected == "세번째 페이지":
+elif page == "세번째 페이지":
     st.title("기존 제품의 방식과 단점")
-    st.image("image_page3_2.png")
-    st.image("image_page3_3.png")
+    st.image("https://raw.githubusercontent.com/<username>/<repository>/main/image_page3_2.png")
+    st.image("https://raw.githubusercontent.com/<username>/<repository>/main/image_page3_3.png")
     st.subheader("기존 제품의 방식")
-    st.image("image_page3_1.png")
+    st.image("https://raw.githubusercontent.com/<username>/<repository>/main/image_page3_1.png")
     st.markdown("""
     기존 제품 방식 : 향초를 넣어서 열로 모터를 돌리는 방식
     """)
@@ -51,7 +48,7 @@ elif selected == "세번째 페이지":
     """)
 
 # 네 번째 페이지: 보완하려는 점 등
-elif selected == "네번째 페이지":
+elif page == "네번째 페이지":
     st.title("보완하려는 점")
     st.markdown("""
     기존 시장에 나와있는 제품이지만 해당 제품의 단점을 보완하면 좋을 것 같다라고 판단됨. 
@@ -62,7 +59,7 @@ elif selected == "네번째 페이지":
     """)
 
 # 다섯 번째 페이지: 참고 문헌
-elif selected == "다섯번째 페이지":
+elif page == "다섯번째 페이지":
     st.title("참고 문헌")
     st.markdown("""
     - lei 디퓨저 - [https://shop.lei-aroma.com/ko-kr](https://shop.lei-aroma.com/ko-kr)  
