@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 첫 번째 페이지: 과목명, 소속, 학번, 이름, 프로젝트 명
-st.image("image_page_1.png")
+st.image("image/image_page_1.png")
 st.title("파이썬 프로그래밍 프로젝트")
 st.subheader("개인 프로젝트")
 st.text("소속: 홍익대학교 기계시스템디자인공학과")
@@ -12,11 +12,11 @@ st.text("이름: 박세광")
 st.title("창업하고 싶은 아이템")
 st.subheader("열전 물질을 이용한 무선 디퓨저")
 st.text("열을 동력으로 사용하는 반도체를 이용하여 사용자가 원하는 향을 가진 향초를 기기에 넣고 향초를 점화하면 열이 발생한다. 해당 열을 통해서 프로펠러가 돌아가서 디퓨저가 있는 공간에 해당 향이 확산되는 인테리어 소품")
-st.image(["image_page2_1.png", "image_page2_2.png", "image_page2_3.png", "image_page2_4.png", "image_page2_5.png"])
+st.image(["image/image_page2_1.png", "image/image_page2_2.png", "image/image_page2_3.png", "image/image_page2_4.png", "image/image_page2_5.png"])
 
 # 세 번째 페이지: 아이템 사진 두 개, 기존 제품의 방식, 단점
 st.title("기존 제품의 방식과 단점")
-st.image("image_page3_1.png")
+st.image("image/image_page3_1.png")
 st.subheader("기존 제품의 방식")
 st.text("열을 동력으로 사용하는 제벡 효과")
 st.subheader("단점")
