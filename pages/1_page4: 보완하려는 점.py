@@ -2,6 +2,9 @@ import streamlit as st
 
 
 st.title("보완하려는 점")
+st.image("add1.png")
+st.image("add1.png")
+
 st.markdown("""
 기존 시장에 나와있는 제품이지만 해당 제품의 단점을 보완하면 좋을 것 같다라고 판단됨. 
 평소에 디자인에 관심이 있어서 인테리어 소품을 많이 보면서 영감을 얻는데 기존 제품은 가격이 너무 비싸게 책정되어 있다고 생각됨. 
