@@ -1,7 +1,6 @@
 import streamlit as st
 
 # 첫 번째 페이지: 과목명, 소속, 학번, 이름, 프로젝트 명
-#st.image("https://github.com/0gwang/My_first_stapp/tree/main/image/image_page1.png")
 st.image("image/image_page1.png")
 st.title("파이썬 프로그래밍 프로젝트")
 st.subheader("개인 프로젝트")
@@ -17,9 +16,11 @@ st.image(["image/image_page2_1.png", "image/image_page2_2.png", "image/image_pag
 
 # 세 번째 페이지: 아이템 사진 두 개, 기존 제품의 방식, 단점
 st.title("기존 제품의 방식과 단점")
-st.image("image/image_page3_1.png")
+st.image("image/image_page3_2.png")
+st.image("image/image_page3_3.png")
 st.subheader("기존 제품의 방식")
 st.text("기존 제품 방식 : 향초를 넣어서 열로 모터를 돌리는 방식")
+st.image("image/image_page3_1.png")
 st.subheader("단점")
 st.text("기존 제품 단점 : 향초의 향이 아닌 아로마 오일을 따로 주입하는 단점이 존재함, 30만원이라는 매우 비싼 가격")
 
