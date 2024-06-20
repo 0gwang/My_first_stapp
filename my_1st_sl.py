@@ -1,51 +1,32 @@
-import streamlit as st  # streamlit 라이브러리 임포트
+import streamlit as st
 
-# 타이틀 텍스트 출력
-st.title('첫번째 웹 어플 만들기 👋')
+# 첫 번째 페이지: 과목명, 소속, 학번, 이름, 프로젝트 명
+st.image("image_page_1.png")
+st.title("파이썬 프로그래밍 프로젝트")
+st.subheader("개인 프로젝트")
+st.text("소속: 홍익대학교 기계시스템디자인공학과")
+st.text("학번: C017161")
+st.text("이름: 박세광")
 
-# 텍스트 출력
-st.write('# 1. Markdown 텍스트 작성하기')
+# 두 번째 페이지: 창업하고 싶은 아이템 사진과 제품명
+st.title("창업하고 싶은 아이템")
+st.subheader("열전 물질을 이용한 무선 디퓨저")
+st.text("열을 동력으로 사용하는 반도체를 이용하여 사용자가 원하는 향을 가진 향초를 기기에 넣고 향초를 점화하면 열이 발생한다. 해당 열을 통해서 프로펠러가 돌아가서 디퓨저가 있는 공간에 해당 향이 확산되는 인테리어 소품")
+st.image(["image_page2_1.png", "image_page2_2.png", "image_page2_3.png", "image_page2_4.png", "image_page2_5.png"])
 
-# Markdown 문법으로 작성된 문장 출력
-st.markdown(
-    '''
-    # 마크다운 헤더1
-    - 마크다운 목록1. **굵게** 표시
-    - 마크다운 목록2. *기울임* 표시
-        - 마크다운 목록2-1
-        - 마크다운 목록2-2
+# 세 번째 페이지: 아이템 사진 두 개, 기존 제품의 방식, 단점
+st.title("기존 제품의 방식과 단점")
+st.image("image_page3_1.png")
+st.subheader("기존 제품의 방식")
+st.text("열을 동력으로 사용하는 제벡 효과")
+st.subheader("단점")
+st.text("기존 제품은 열을 방출하여 동력을 얻는 방식으로, 효율성이 낮고 가격이 비쌈")
 
-    ## 마크다운 헤더2
-    - [네이버](https://naver.com)
-    - [구글](https://google.com)
+# 네 번째 페이지: 보완하려는 점 등
+st.title("보완하려는 점")
+st.text("기존 시장에 나와있는 제품이지만 해당 제품의 단점을 보완하면 좋을 것 같다라고 판단됨. 평소에 디자인에 관심이 있어서 인테리어 소품을 많이 보면서 영감을 얻는데 기존 제품은 가격이 너무 비싸게 책정되어 있다고 생각됨. 또한 해당 제품은 향을 확산시키기 위해서는 오일을 프로펠러 중앙에 주입하는 방식인데 해당 과정을 단순화해서 오일을 넣지 않고 원하는 향을 가진 향초를 직접 확산 시킬 수 있게끔 만들어 볼 생각입니다. 또한 기계공학과에서 배웠던 역학적인 지식들과 반도체 관련 지식들을 접목시켜 보다 더 안정적이고 신뢰도 있는 제품을 만들 생각입니다.")
 
-    ### 마크다운 헤더3
-    일반 텍스트
-    '''
-    )
-
-# DataFrame 출력
-import pandas as pd  # pandas 라이브러리 임포트
-
-st.write('# 2. DataFrame 표시하기')  # 텍스트 출력
-df = pd.DataFrame({  # DataFrame 생성
-    '이름': ['홍길동', '이순신', '강감찬'],
-    '나이': [20, 45, 35]
-})
-
-st.dataframe(df)  # DataFrame 출력
-
-# 그래프 출력
-import numpy as np   # numpy 라이브러리 임포트
-
-st.write('# 3. 그래프 표시하기')  # 텍스트 출력
-chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"]) # DataFrame 생성
-
-st.bar_chart(chart_data)  # 바 차트 출력
-
-# 이미지 출력
-from PIL import Image     # 이미지 처리를 위한 PIL 라이브러리 임포트
-
-st.write('# 4. 이미지 표시하기')   # 텍스트 출력
-img = Image.open('python.png')    # 이미지 파일 열기
-st.image(img, width=300)          # 이미지 출력
+# 다섯 번째 페이지: 참고 문헌
+st.title("참고 문헌")
+st.text("lei 디퓨저 - https://shop.lei-aroma.com/ko-kr")
+st.text("열전소자 - https://gamma0burst.tistory.com/594")
