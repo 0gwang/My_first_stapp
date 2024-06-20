@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 첫 번째 페이지: 과목명, 소속, 학번, 이름, 프로젝트 명
-st.image("https://github.com/0gwang/My_first_stapp/tree/main/image")
+st.image("https://github.com/0gwang/My_first_stapp/tree/main/image/image_page1.png")
 st.title("파이썬 프로그래밍 프로젝트")
 st.subheader("개인 프로젝트")
 st.text("소속: 홍익대학교 기계시스템디자인공학과")
