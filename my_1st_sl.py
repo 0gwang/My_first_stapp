@@ -35,10 +35,10 @@ elif page == "두번째 페이지":
 # 세 번째 페이지: 아이템 사진 두 개, 기존 제품의 방식, 단점
 elif page == "세번째 페이지":
     st.title("기존 제품의 방식과 단점")
-    st.image("https://raw.githubusercontent.com/<username>/<repository>/main/image_page3_2.png")
-    st.image("https://raw.githubusercontent.com/<username>/<repository>/main/image_page3_3.png")
+    st.image("image/image_page3_2.png")
+    st.image("image/image_page3_3.png")
     st.subheader("기존 제품의 방식")
-    st.image("https://raw.githubusercontent.com/<username>/<repository>/main/image_page3_1.png")
+    st.image("image/image_page3_1.png")
     st.markdown("""
     기존 제품 방식 : 향초를 넣어서 열로 모터를 돌리는 방식
     """)
