@@ -1,4 +1,6 @@
 import streamlit as st    
+
+st.set_page_config(page_title="홍익대학교 프로젝트")
 st.title("창업하고 싶은 아이템")
 st.subheader("열전 물질을 이용한 무선 디퓨저")
 st.markdown("""
