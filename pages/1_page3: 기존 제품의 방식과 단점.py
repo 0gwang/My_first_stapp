@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("기존 제품의 방식과 단점")
-st.image("image/image_page3_2.png")
+st.image("image/image_upload.png")
 st.image("image/image_page3_3.png")
 st.subheader("기존 제품의 방식")
 st.image("image/image_page3_1.png")
