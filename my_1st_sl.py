@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 첫 번째 페이지: 과목명, 소속, 학번, 이름, 프로젝트 명
-st.image("https://github.com/0gwang/My_first_stapp/tree/main/image/image_page1.png")
+#st.image("https://github.com/0gwang/My_first_stapp/tree/main/image/image_page1.png")
 st.image("image/image_page1.png")
 st.title("파이썬 프로그래밍 프로젝트")
 st.subheader("개인 프로젝트")
@@ -19,9 +19,9 @@ st.image(["image/image_page2_1.png", "image/image_page2_2.png", "image/image_pag
 st.title("기존 제품의 방식과 단점")
 st.image("image/image_page3_1.png")
 st.subheader("기존 제품의 방식")
-st.text("열을 동력으로 사용하는 제벡 효과")
+st.text("기존 제품 방식 : 향초를 넣어서 열로 모터를 돌리는 방식")
 st.subheader("단점")
-st.text("기존 제품은 열을 방출하여 동력을 얻는 방식으로, 효율성이 낮고 가격이 비쌈")
+st.text("기존 제품 단점 : 향초의 향이 아닌 아로마 오일을 따로 주입하는 단점이 존재함, 30만원이라는 매우 비싼 가격")
 
 # 네 번째 페이지: 보완하려는 점 등
 st.title("보완하려는 점")
