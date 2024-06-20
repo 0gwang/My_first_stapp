@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 
 # 페이지 설정
 st.set_page_config(page_title="홍익대학교 프로젝트", layout="wide")
